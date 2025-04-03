@@ -22,7 +22,7 @@ yarn add enthusiast-solutions-sdk-js
 const { Payment } = require('enthusiast-solutions-sdk-js');
 
 // create ECP object with your account ID and secret salt
-const e = new Payment('112', 'my_secret', 'https://paymentpage.enthusiast.com');
+const e = new Payment('112', 'my_secret', {}, 'https://paymentpage.enthusiast.com');
 
 // set payment details 
 e.paymentAmount = 1000;
