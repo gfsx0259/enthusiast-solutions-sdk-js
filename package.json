@@ -1,6 +1,6 @@
 {
   "name": "enthusiast-solutions-sdk-js",
-  "version": "0.1.7",
+  "version": "1.0.6",
   "description": "Enthusiast Solutions JavaScript SDK",
   "main": "index.js",
   "scripts": {
