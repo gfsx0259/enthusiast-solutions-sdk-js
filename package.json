@@ -1,17 +1,38 @@
 {
-  "name": "ecp-signer",
-  "version": "1.0.0",
-  "description": "Ecommpay signer package",
+  "name": "enthusiast-solutions-sdk-js",
+  "version": "0.1.7",
+  "description": "Enthusiast Solutions JavaScript SDK",
   "main": "index.js",
   "scripts": {
-    "test": "tap tests/*.js"
+    "lint": "eslint .",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/__tests__/data/",
+      "<rootDir>/__tests__/mock/",
+      "<rootDir>/node_modules/",
+      "<rootDir/index.js"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov"
+    ]
   },
   "author": {
-    "name": "Zhukov Roman",
-    "email": "r.zhukov@it.ecommpay.com"
+    "name": "Popov Konstantin",
+    "email": "konstantin.icreative@gmail.com"
   },
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gfsx0259/enthusiast-solutions-sdk-js"
+  },
+  "license": "MIT",
   "devDependencies": {
-    "tap": "^12.0.1"
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "jest": "^23.2.0"
   }
 }
